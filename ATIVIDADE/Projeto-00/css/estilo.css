@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: ghostwhite;
+    background-color: #e0f7fa;
+}
+
+nav {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li.login {
+    margin-left: auto;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #999;
+    font-weight: bold;
+    font-size: 2.0em;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #f57c00;
+}
+
+.active {
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #f57c00;
+}
+
+.Banner img {
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.promocao {
+    text-align: center;
+    padding: 20px;
+    background-color: #4fc3f7;
+}
+
+.produtos-2 {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    max-width: 1000px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.produto {
+    background-color: #ff7043;
+    width: 200px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: visible; 
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.produto s {
+    color: #ffe0b2;
+    font-size: 0.9em;
+}
+
+.nome {
+    color: red;
+}
+
+.icone-carrinho {
+    width: 30px;  
+    height: 30px; 
+    background-color: #0288d1;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; 
+    bottom: -15px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    border: 3px solid white;  
+}
+
+.icone-carrinho img {
+    width: 18px;  
+    height: 18px;
+}
+
+.icone-carrinho:hover {
+    background-color: #0277bd;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4fc3f7;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 40px;
+}
